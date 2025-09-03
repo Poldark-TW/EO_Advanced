@@ -1,6 +1,6 @@
 # EO_Advanced
-##Workflow Summary
-###Version 1 – Baseline Classification
+**Workflow Summary**
+***Version 1 – Baseline Classification***
 
 1.Define study area (ROI) and time period.
 
@@ -22,7 +22,7 @@
 
 10.Classify full image and export results.
 
-###Version 2 – Enhanced Classification
+***Version 2 – Enhanced Classification***
 
 1.Same ROI and time period setup as Version 1.
 
