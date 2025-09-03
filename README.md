@@ -1,5 +1,6 @@
 # EO_Advanced
 **Workflow Summary**
+
 ***Version 1 – Baseline Classification***
 
 1.Define study area (ROI) and time period.
