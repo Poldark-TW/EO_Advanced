@@ -23,6 +23,7 @@
 
 10.Classify full image and export results.
 
+
 ***Version 2 – Enhanced Classification***
 
 1.Same ROI and time period setup as Version 1.
