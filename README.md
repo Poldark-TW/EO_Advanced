@@ -44,6 +44,6 @@
 
 9.Train a Random Forest classifier with enhanced feature space.
 
-Evaluate with training, testing, and k-fold cross-validation.
+10.Evaluate with training, testing, and k-fold cross-validation.
 
-Classify full image and export results.
+11.Classify full image and export results.
