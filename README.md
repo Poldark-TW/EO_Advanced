@@ -47,6 +47,7 @@ Critical points:
  - Outputs provide robust land cover information for environmental monitoring and change detection.
 
 
+
 ***Version 2 – Baseline Classification Workflow***
 
 ****Stage 1: Preprocessing & Feature Extraction****
@@ -90,18 +91,10 @@ Critical points:
  - Results show much higher training accuracy (~0.93–0.97), but lower test accuracy (~0.62 winter, ~0.96 summer), reflecting possible seasonal dependence and overfitting.
  - Final classification maps include refined spatial detail due to texture and terrain.
 
- - | **Aspect**                    | **Version 1**                                                               | **Version 2**                                                                |
-| ----------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| **Data Sources**              | Sentinel-2 (optical), Sentinel-1 (SAR)                                      | Sentinel-2 + Sentinel-1 + DEM + SAR texture (GLCM)                           |
-| **Features**                  | Optical bands, VV/VH, VV/VH ratio, NDVI, NDWI, NDSI                         | Optical bands, VV/VH, VV/VH ratio, DEM, SAR texture (contrast, correlation)  |
-| **Classifier**                | Random Forest (basic)                                                       | Random Forest (expanded feature space)                                       |
-| **Training Accuracy**         | \~0.75 (winter), \~0.92 (summer)                                            | \~0.93 (winter), \~0.97 (summer)                                             |
-| **Testing Accuracy**          | \~0.71 (winter), \~0.85 (summer)                                            | \~0.62 (winter), \~0.96 (summer)                                             |
-| **Cross-Validation Accuracy** | \~0.52 (winter), \~0.85 (summer)                                            | \~0.70 (winter), \~0.88 (summer)                                             |
-| **Strengths**                 | Simpler, robust, less prone to overfitting, better generalization in winter | Richer feature space, better class separability, high performance in summer  |
-| **Weaknesses**                | Lower detail, struggles with spectral overlap, misses elevation effects     | Risk of overfitting, more complex, test accuracy inconsistent across seasons |
-| **Best Use Case**             | Quick regional monitoring, balanced generalization                          | Detailed alpine land cover mapping, terrain-sensitive studies                |
 
+
+****Comparative Summary: Version 1 vs Version 2****
+<img width="556" height="682" alt="image" src="https://github.com/user-attachments/assets/d4ff2391-3b7a-47a8-bcaf-e1a05bc0308d" />
 
 
 
