@@ -4,7 +4,9 @@
 ***Version 1 – Baseline Classification Workflow***
 
 ****Stage 1: Data Collection (Sentinel-1 & Sentinel-2)****
+
 It relies on Sentinel-2 optical imagery and Sentinel-1 SAR radar data as the primary data sources, selecting representative seasonal periods.
+
 *****Critical points:*****
  - Sentinel-2 provides multispectral information to identify vegetation, water, snow, and ice.
  - Sentinel-1 is unaffected by clouds, complementing optical imagery in mountainous regions where cloud cover and shadows are common.
