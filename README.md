@@ -242,6 +242,7 @@ Improves the model’s ability to recognize minority classes that might otherwis
 Version 2 shows signs of overfitting because it uses many features (DEM + texture + spectral). While training accuracy is high, the testing accuracy drops, meaning it learns noise instead of general patterns. This makes Version 1 more generalizable in some cases.
 
 *****🔹Why is cloud interference less of a problem in your methodology?*****
+
 It combined Sentinel-1 radar (not affected by clouds) with Sentinel-2 optical imagery. Additionally, using indices like NDVI and NDSI reduces confusion between clouds and snow. The integration of radar and DEM features further improves discrimination.
 
 *****🔹Why use NDVI, NDSI, and NDWI in the project?*****
