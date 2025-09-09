@@ -94,7 +94,38 @@ Critical points:
 
 
 ****Comparative Summary: Version 1 vs Version 2****
+
 <img width="556" height="682" alt="image" src="https://github.com/user-attachments/assets/d4ff2391-3b7a-47a8-bcaf-e1a05bc0308d" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
