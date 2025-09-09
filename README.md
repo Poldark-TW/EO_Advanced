@@ -189,7 +189,24 @@ Ensures each class (snow, rock, grass, forest, water) gets represented in both t
 Improves the model’s ability to recognize minority classes that might otherwise be underrepresented.
 
 
+*****🔹Why is Version 2 not necessarily better despite higher training accuracy?*****
 
+Version 2 shows signs of overfitting because it uses many features (DEM + texture + spectral). While training accuracy is high, the testing accuracy drops, meaning it learns noise instead of general patterns. This makes Version 1 more generalizable in some cases.
+
+*****🔹Why is cloud interference less of a problem in your methodology?*****
+It combined Sentinel-1 radar (not affected by clouds) with Sentinel-2 optical imagery. Additionally, using indices like NDVI and NDSI reduces confusion between clouds and snow. The integration of radar and DEM features further improves discrimination.
+
+*****🔹Why did the project utilize VV + VH polarizations from Sentinel-1?*****
+
+Complementary information:
+
+VV (Vertical transmit, Vertical receive): Sensitive to surface roughness and geometric structure (e.g., rock, bare ground, calm water).
+
+VH (Vertical transmit, Horizontal receive): Sensitive to volume scattering (e.g., vegetation, snowpack, forest canopy).
+
+Improved class separation: Using both captures surface + volume scattering differences, which helps distinguish water vs. vegetation, snow vs. rock, and forest vs. grassland.
+
+Noise reduction: VV alone may misclassify forests as rock, while VH adds extra backscatter variability, improving classification robustness.
 
 
 
