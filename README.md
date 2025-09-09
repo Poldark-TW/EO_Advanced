@@ -162,7 +162,7 @@ Outcome: Balanced, generalizable, but struggles with subtle class boundaries.
 
 Features: Version 1 + DEM + Sentinel-1 texture (GLCM).
 
-Classifier: Random Forest (or SVM if discussed).
+Classifier: Random Forest and SVM.
 
 Outcome: Higher training accuracy, better differentiation of complex classes, but risk of overfitting and noise.
 
