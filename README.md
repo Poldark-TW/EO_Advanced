@@ -148,6 +148,52 @@ Accuracy was evaluated using the same three approaches:
 
 
 
+
+****Water Body Analysis in the Project****
+
+*****Water analysis is important*****
+
+In alpine environment *****Lago del Sabbione***** water bodies such as glacier and reservoir are key hydrological indicators.
+
+Seasonal snow/ice melt feeds into these lakes, making their monitoring crucial for understanding climate change, hydropower management, and flood risks.
+
+Challenges
+
+Optical data (Sentinel-2): Water can be confused with shadows or dark rock.
+
+Radar data (Sentinel-1): Water surfaces often appear very dark (low backscatter), but interpretation can be influenced by wind roughness and surrounding topography.
+
+Applied methods in Version 1 & 2
+
+NDWI (Normalized Difference Water Index)
+
+Formula: (Green – NIR) / (Green + NIR)
+
+Highlights open water bodies, since water absorbs strongly in NIR and reflects green.
+
+Sentinel-1 VV & VH backscatter
+
+Open water → very low VV/VH signal (smooth surface).
+
+Ratio (VV/VH) improves discrimination of water from other low-reflectance surfaces.
+
+DEM filtering (Version 2)
+
+High-elevation flat areas with NDWI signal + low backscatter are strong indicators of alpine lakes.
+
+Results & advantages
+
+Combining NDWI with Sentinel-1 ensures cloud-robust detection:
+
+NDWI captures water under clear conditions.
+
+Sentinel-1 confirms presence even under cloud cover.
+
+This multisensor approach reduces false positives from shadows and snow.
+
+
+
+
 ****Methods****
 
 *****Version 1:*****
