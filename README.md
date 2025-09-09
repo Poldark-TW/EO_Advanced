@@ -196,13 +196,40 @@ Version 2 shows signs of overfitting because it uses many features (DEM + textur
 *****🔹Why is cloud interference less of a problem in your methodology?*****
 It combined Sentinel-1 radar (not affected by clouds) with Sentinel-2 optical imagery. Additionally, using indices like NDVI and NDSI reduces confusion between clouds and snow. The integration of radar and DEM features further improves discrimination.
 
+*****🔹Why use NDVI, NDSI, and NDWI in the project?*****
+
+NDVI (Normalized Difference Vegetation Index):
+
+Formula: (NIR – Red) / (NIR + Red)
+
+Captures vegetation vigor because plants strongly reflect NIR and absorb red light.
+
+Helps distinguish vegetation (grass/forest) from non-vegetated surfaces (rock, snow, water).
+
+NDSI (Normalized Difference Snow Index):
+
+Formula: (Green – SWIR) / (Green + SWIR)
+
+Snow strongly reflects green but absorbs in SWIR, unlike rocks or vegetation.
+
+Useful for separating snow/ice from bright surfaces such as rocks or clouds.
+
+NDWI (Normalized Difference Water Index):
+
+Formula: (Green – NIR) / (Green + NIR)
+
+Water absorbs strongly in NIR but reflects green.
+
+Effective for identifying water bodies and separating them from vegetation or shadows.
+
+
 *****🔹Why did the project utilize VV + VH polarizations from Sentinel-1?*****
 
 Complementary information:
 
-VV (Vertical transmit, Vertical receive): Sensitive to surface roughness and geometric structure (e.g., rock, bare ground, calm water).
+VV (Vertical transmit, Vertical receive): Sensitive to surface roughness and geometric structure (rock, bare ground, calm water).
 
-VH (Vertical transmit, Horizontal receive): Sensitive to volume scattering (e.g., vegetation, snowpack, forest canopy).
+VH (Vertical transmit, Horizontal receive): Sensitive to volume scattering ( vegetation, snowpack, forest canopy).
 
 Improved class separation: Using both captures surface + volume scattering differences, which helps distinguish water vs. vegetation, snow vs. rock, and forest vs. grassland.
 
