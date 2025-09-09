@@ -118,7 +118,8 @@ Accuracy was evaluated using the same three approaches:
 
 ****Comparative Summary: Version 1 vs Version 2****
 
-<img width="556" height="682" alt="image" src="https://github.com/user-attachments/assets/d4ff2391-3b7a-47a8-bcaf-e1a05bc0308d" />
+<img width="556" height="635" alt="image" src="https://github.com/user-attachments/assets/000f47ae-14b9-4fab-ad20-061106dbff6e" />
+
 
 
 
