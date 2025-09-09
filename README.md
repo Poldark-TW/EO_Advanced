@@ -194,7 +194,7 @@ This multisensor approach reduces false positives from shadows and snow.
 
 
 
-****Methods****
+***Methods***
 
 *****Version 1:*****
 
