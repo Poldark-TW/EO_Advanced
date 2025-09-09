@@ -26,7 +26,7 @@ Basic preprocessing was applied, including:
 ****Stage 3: Feature Stack Construction****
 
 All selected features were combined into a single multi-source feature stack, including:
- - Sentinel-2 bands.
+ - Sentinel-2 bands('B2','B3','B4','B8','B11','B12').
  - Sentinel-1 VV/VH backscatter.
  - VV/VH ratio.
  - Spectral indices (NDVI, NDWI, NDSI).
@@ -82,10 +82,11 @@ Similar preprocessing as Version 1, but extended to include texture analysis on 
 ****Stage 3: Feature Stack Construction****
 
 The feature stack in Version 2 is more comprehensive:
- - Sentinel-2 spectral bands.
+ - Sentinel-2 spectral bands(('B2','B3','B4','B8','B11','B12')).
  - Sentinel-1 VV/VH + VV/VH ratio.
  - DEM (elevation).
  - SAR texture features (GLCM contrast, correlation).
+ --- GLCM is a statistical texture analysis method that describes how pixel values co-occur in an image. In SAR imagery, it helps distinguish land cover types with similar backscatter values by quantifying textural differences (contrast, entropy, correlation). Better separate forests, grasslands, and snow-covered areas.
 
 *****Critical points:*****
  - Expanding the feature space captures both spectral and structural/terrain information.
